@@ -1,0 +1,25 @@
+# OpenAI 纯净分流规则
+# @author chengzhiqi
+# @date 2026-03-23
+
+name: OpenAI Pure
+desc: 仅包含 OpenAI 与 ChatGPT 自有域名的分流规则
+author: 330ml
+updated: 2026-03-23
+rules:
+  # OpenAI 核心域名
+  - host-suffix,openai.com
+  - host-suffix,auth.openai.com
+  - host-suffix,auth0.openai.com
+  - host-suffix,chat.openai.com
+  - host-suffix,chatgpt.com
+  - host-suffix,oaistatic.com
+  - host-suffix,oaiusercontent.com
+  - host-suffix,openaimaps.com
+
+  # OpenAI 已知子域名
+  - domain,android.chat.openai.com
+  - domain,desktop.chat.openai.com
+  - domain,ios.chat.openai.com
+  - domain,setup.auth.openai.com
+  - domain,tcr9i.chat.openai.com

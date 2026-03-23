@@ -1,0 +1,57 @@
+# OpenAI 分流规则
+# @author chengzhiqi
+# @date 2026-03-23
+
+name: OpenAI
+desc: OpenAI 与 ChatGPT 服务分流规则
+author: 330ml
+updated: 2026-03-23
+rules:
+  # OpenAI 核心域名
+  - host-suffix,openai.com
+  - host-suffix,auth.openai.com
+  - host-suffix,auth0.openai.com
+  - host-suffix,chat.openai.com
+  - host-suffix,chatgpt.com
+  - host-suffix,oaistatic.com
+  - host-suffix,oaiusercontent.com
+  - host-suffix,openaimaps.com
+
+  # OpenAI 已知子域名
+  - domain,android.chat.openai.com
+  - domain,desktop.chat.openai.com
+  - domain,ios.chat.openai.com
+  - domain,setup.auth.openai.com
+  - domain,tcr9i.chat.openai.com
+
+  # OpenAI 访问过程中常见的辅助依赖域名
+  - host-suffix,featuregates.org
+  - host-suffix,statsig.com
+  - domain,events.statsigapi.net
+  - domain,statsigapi.net
+  - domain,featureassets.org
+  - domain,cdn.openaimerge.com
+  - domain,prodregistryv2.org
+
+  # 登录与工作区相关依赖域名
+  - domain,cdn.workos.com
+  - domain,forwarder.workos.com
+  - domain,images.workoscdn.com
+  - domain,setup.workos.com
+  - domain,workos.imgix.net
+
+  # 客服与前端静态依赖域名
+  - host-suffix,intercom.io
+  - host-suffix,intercomcdn.com
+  - domain,js.intercomcdn.com
+  - domain,js.stripe.com
+
+  # 安全校验与监控依赖域名
+  - domain,challenges.cloudflare.com
+  - domain,o207216.ingest.sentry.io
+  - domain,o33249.ingest.sentry.io
+  - domain,rum.browser-intake-datadoghq.com
+
+  # 邮件与苹果相关依赖域名
+  - host-suffix,ct.sendgrid.net
+  - domain,humb.apple.com
