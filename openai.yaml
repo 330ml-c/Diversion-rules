@@ -1,12 +1,8 @@
 # OpenAI 分流规则
-# @author chengzhiqi
+# @author 330ml
 # @date 2026-03-23
 
-name: OpenAI
-desc: OpenAI 与 ChatGPT 服务分流规则
-author: 330ml
-updated: 2026-03-23
-rules:
+payload:
   # OpenAI 核心域名
   - host-suffix,openai.com
   - host-suffix,auth.openai.com
