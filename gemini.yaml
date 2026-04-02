@@ -1,0 +1,33 @@
+# Gemini 分流规则
+# @author chengzhiqi
+# @date 2026-04-02
+
+payload:
+  # Gemini 核心域名
+  - host-suffix,gemini.google.com
+  - domain,ai.google.dev
+  - domain,aistudio.google.com
+  - domain,generativelanguage.googleapis.com
+
+  # Google 账号登录与身份验证依赖域名
+  - domain,accounts.google.com
+
+  # Gemini 前端静态资源与上传下载依赖域名
+  - host-suffix,gstatic.com
+  - host-suffix,googleusercontent.com
+  - domain,fonts.googleapis.com
+
+  # Gemini 连接 Google 服务时常见的搜索与位置依赖域名
+  - domain,www.google.com
+  - domain,maps.googleapis.com
+  - domain,mapsresources-pa.googleapis.com
+  - domain,streetviewpixels-pa.googleapis.com
+
+  # Gemini 连接 YouTube 时常见的多媒体依赖域名
+  - host-suffix,youtube.com
+  - domain,youtube-nocookie.com
+  - host-suffix,ytimg.com
+  - host-suffix,googlevideo.com
+
+  # YouTube 嵌入内容可能触发的广告与统计依赖域名
+  - host-suffix,doubleclick.net

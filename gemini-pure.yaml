@@ -1,0 +1,14 @@
+# Gemini 分流规则
+# @author chengzhiqi
+# @date 2026-04-02
+
+payload:
+  # Gemini 核心域名
+  - host-suffix,gemini.google.com
+  - domain,ai.google.dev
+  - domain,aistudio.google.com
+  - domain,generativelanguage.googleapis.com
+
+  # Gemini 前端静态资源常见依赖域名
+  - host-suffix,gstatic.com
+  - host-suffix,googleusercontent.com
